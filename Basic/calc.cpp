@@ -3,14 +3,14 @@
 using namespace std;
 
 int getInputNumber(int number) {
-    cout << "Gib die " << number << ". Zahl an: ";
+    cout << "Give the " << number << ". number: ";
 
     int input = 0;
     while (!(cin >> input)) {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "Ungültige Eingabe! Bitte eine Zahl eingeben. " << endl;
-        cout << "Gib die " << number <<". Zahl an: ";
+        cout << "Invalid input. Please enter a valid number. " << endl;
+        cout << "Give the " << number << ". number: ";
     }
 
     cout << endl;
@@ -20,7 +20,7 @@ int getInputNumber(int number) {
 void menu();
 
 void printResult(int result) {
-    cout << "Das Ergebnis ist: " << result << "\n\n";
+    cout << "The result is: " << result << "\n\n";
     menu();
 }
 
@@ -53,7 +53,7 @@ void divide() {
 }
 
 void menu() {
-    cout << "Wähle deinen Modus:\n(1): Addieren\n(2): Subtrahieren\n(3): Multiplizieren\n(4): Dividieren\n(q): Beenden\n> ";
+    cout << "Choose the mode:\n(1): Addition\n(2): Subtraction\n(3): Multiply\n(4): Divide\n(q): Quit\n> ";
     char input = ' ';
     cin >> input;
     cout << "\n";
@@ -71,24 +71,24 @@ void menu() {
             divide();
         break;
         case('q'): 
-            cout << "Taschenrechner wird geschlossen.\nAuf Wiedersehen!\n\n" << endl;
+            cout << "Closing Calculator.\nGood Bye!\n\n" << endl;
             return;
         break;
         default:
-            cout << "Eingabe ungültig, bitte versuche es erneut!\n\n";
+            cout << "Invalid input, please try again!\n\n";
             menu();
     }
 }
 
 const char *str = R"(
    + ========================================================================== +
-   +  _____              _                              _                       +
-   + |_   _|_ _ ___  ___| |__   ___ _ __  _ __ ___  ___| |__  _ __   ___ _ __   +
-   +   | |/ _` / __|/ __| '_ \ / _ \ '_ \| '__/ _ \/ __| '_ \| '_ \ / _ \ '__|  +
-   +   | | (_| \__ \ (__| | | |  __/ | | | | |  __/ (__| | | | | | |  __/ |     +
-   +   |_|\__,_|___/\___|_| |_|\___|_| |_|_|  \___|\___|_| |_|_| |_|\___|_|     +
+   +                ____      _            _       _                            +
+   +               / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __                +
+   +              | |   / _` | |/ __| | | | |/ _` | __/ _ \| '__|               +
+   +              | |__| (_| | | (__| |_| | | (_| | || (_) | |                  + 
+   +               \____\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|                  +
    +                                                                            +
-   +                                                          gemacht von beanZ +
+   +                                                            made by beanZ   +
    + ========================================================================== +
 )";
 
@@ -97,7 +97,7 @@ int main() {
     
     string start = " ";
     while (start != "start") {
-        cout << "Tippe zum starten 'start'\n> ";
+        cout << "Type 'start' to begin calculating.\n> ";
         cin >> start;
         cout << endl;
 
