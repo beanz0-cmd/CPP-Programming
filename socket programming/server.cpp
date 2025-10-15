@@ -110,7 +110,7 @@ void createServer() {
         return;
     }
     
-    cout << "Server läuft auf " << ADDR << ":" << PORT << endl;
+    cout << "Server runs at " << ADDR << ":" << PORT << endl;
     cout << "Waiting for connection..." << endl;
     
     int clientSocket = cli_accept(serverSocket);
