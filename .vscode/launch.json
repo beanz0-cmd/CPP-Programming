@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/beanz/VSCode/projects/C++/Socket Programming",
-      "program": "/home/beanz/VSCode/projects/C++/Socket Programming/build/Debug/outDebug",
+      "cwd": "/home/beanz/VSCode/projects/C++/basic projects/tic tac toe",
+      "program": "/home/beanz/VSCode/projects/C++/basic projects/tic tac toe/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
